@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1009324763906",
+    "project_id": "sportifield-40c01",
+    "storage_bucket": "sportifield-40c01.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009324763906:android:8e2d58fe51d8daf0e6b01b",
+        "android_client_info": {
+          "package_name": "com.t4lon.sportifield"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv6aNcyTz9hWLl3uuCIesqMRyWLtyEpxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
