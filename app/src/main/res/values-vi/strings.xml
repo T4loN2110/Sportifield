@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sportifield</string>
+
+    <string name="common_btn_cancel">Hủy</string>
+
+    <string name="login_subtitle">Chào mừng quay lại!</string>
+    <string name="login_label_email">Email</string>
+    <string name="login_label_password">Mật khẩu</string>
+    <string name="login_btn_submit">Đăng nhập</string>
+    <string name="login_btn_register">Chưa có tài khoản? Đăng ký</string>
+    <string name="login_msg_success">Đăng nhập thành công</string>
+    <string name="login_msg_error">Đăng nhập thất bại. Xin hãy thử lại.</string>
+
+    <string name="register_subtitle">Tạo tài khoản của bạn</string>
+    <string name="register_label_email">Email</string>
+    <string name="register_label_password">Mật khẩu</string>
+    <string name="register_btn_submit">Tạo Tài Khoản</string>
+    <string name="register_btn_login">Đã có tài khoản? Đăng Nhập</string>
+    <string name="register_msg_success">Đăng ký thành công</string>
+    <string name="register_msg_error">Đăng ký thất bại. Xin hãy thử lại.</string>
+    
+    <string name="email_verification_msg_sent">Email xác nhận đã được gửi. Xin hãy kiểm tra hộp thư của bạn.</string>
+    <string name="email_verification_msg_failed">Gửi email xác nhận thất bại. Xin hãy thử lại.</string>
+</resources>

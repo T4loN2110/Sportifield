@@ -1,6 +1,8 @@
-package com.t4lon.sportifield.ui.features.authentication
+package com.t4lon.sportifield.ui.features.login
 
-class AuthenticationContract {
+import com.t4lon.sportifield.util.UiText
+
+class LoginContract {
     data class State(
         val isLoading: Boolean = false,
         val error: String? = null,
@@ -13,10 +15,12 @@ class AuthenticationContract {
         data class EmailChanged(val email: String) : Intent()
         data class PasswordChanged(val password: String) : Intent()
         data object LoginClicked : Intent()
+        data object RegisterClicked : Intent()
     }
 
     sealed class Effect {
         data object NavigateToHome : Effect()
-        data class ShowToast(val message: String) : Effect()
+        data object NavigateToRegister : Effect()
+        data class ShowToast(val message: UiText) : Effect()
     }
 }

@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Sportifield</string>
+
+    <string name="common_btn_cancel">Cancel</string>
+
+    <string name="login_subtitle">Welcome back!</string>
+    <string name="login_label_email">Email</string>
+    <string name="login_label_password">Password</string>
+    <string name="login_btn_submit">Login</string>
+    <string name="login_btn_register">Don't have an account? Register</string>
+    <string name="login_msg_success">Login successful</string>
+    <string name="login_msg_error">Login failed. Please try again.</string>
+
+    <string name="register_subtitle">Create your account</string>
+    <string name="register_label_email">Email</string>
+    <string name="register_label_password">Password</string>
+    <string name="register_btn_submit">Create Account</string>
+    <string name="register_btn_login">Already have an account? Sign In</string>
+    <string name="register_msg_success">Registration successful</string>
+    <string name="register_msg_error">Registration failed. Please try again.</string>
+
+    <string name="email_verification_subtitle">Waiting for Email Verification</string>
+    <string name="email_verification_msg_sent">Verification email sent. Please check your inbox.</string>
+    <string name="email_verification_msg_failed">Failed to send verification email. Please try again.</string>
 </resources>

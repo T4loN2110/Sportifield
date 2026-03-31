@@ -12,8 +12,12 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.t4lon.sportifield.ui.features.authentication.AuthenticationScreen
+
 import com.t4lon.sportifield.ui.theme.AppTheme
+import com.t4lon.sportifield.ui.features.login.LoginScreen
+import com.t4lon.sportifield.ui.features.register.RegisterScreen
+import com.t4lon.sportifield.ui.features.email_verification.EmailVerificationScreen
+import com.t4lon.sportifield.ui.features.home.HomeScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,9 +31,18 @@ class MainActivity : ComponentActivity() {
                 ) {
                     val navController = rememberNavController()
 
-                    NavHost(navController = navController, startDestination = "authentication") {
-                        composable("authentication") {
-                            AuthenticationScreen(viewModel = viewModel())
+                    NavHost(navController = navController, startDestination = "login") {
+                        composable("login") {
+                            LoginScreen(viewModel = viewModel(), navController = navController)
+                        }
+                        composable("register") {
+                            RegisterScreen(viewModel = viewModel(), navController = navController)
+                        }
+                        composable("email_verification") {
+                            EmailVerificationScreen(viewModel = viewModel(), navController = navController)
+                        }
+                        composable("home") {
+                            HomeScreen(viewModel = viewModel(), navController = navController)
                         }
                     }
                 }
