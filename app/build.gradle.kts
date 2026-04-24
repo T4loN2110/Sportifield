@@ -67,9 +67,12 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
 
+    implementation(libs.play.services.basement)
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.auth)
+
+    implementation(libs.gson)
 
     implementation(files("libs/zpdk-release-v3.1.aar"))
 }

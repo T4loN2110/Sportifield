@@ -7,7 +7,7 @@
     <string name="login_label_email">Email</string>
     <string name="login_label_password">Password</string>
     <string name="login_btn_submit">Login</string>
-    <string name="login_btn_register">Don't have an account? Register</string>
+    <string name="login_btn_register">Don\'t have an account? Register</string>
     <string name="login_msg_success">Login successful</string>
     <string name="login_msg_error">Login failed. Please try again.</string>
 

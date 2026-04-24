@@ -19,7 +19,8 @@
     <string name="register_btn_login">Đã có tài khoản? Đăng Nhập</string>
     <string name="register_msg_success">Đăng ký thành công</string>
     <string name="register_msg_error">Đăng ký thất bại. Xin hãy thử lại.</string>
-    
+
+    <string name="email_verification_subtitle">Đợi xác nhận email</string>
     <string name="email_verification_msg_sent">Email xác nhận đã được gửi. Xin hãy kiểm tra hộp thư của bạn.</string>
     <string name="email_verification_msg_failed">Gửi email xác nhận thất bại. Xin hãy thử lại.</string>
 </resources>
