@@ -11,11 +11,18 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
 import com.t4lon.sportifield.R
+import com.t4lon.sportifield.data.features.authentication.model.UserModel
 import com.t4lon.sportifield.util.UiText
+import com.t4lon.sportifield.data.features.authentication.repository.UserRepository
 
-class RegisterViewModel : ViewModel() {
+@HiltViewModel
+class RegisterViewModel @Inject constructor(
+    private val repo: UserRepository
+) : ViewModel() {
     private val auth: FirebaseAuth = FirebaseAuth.getInstance()
 
     private val _state = MutableStateFlow(RegisterContract.State())
@@ -56,6 +63,15 @@ class RegisterViewModel : ViewModel() {
 
                 if (result.user != null) {
                     result.user?.sendEmailVerification()?.await()
+
+                    val user = UserModel(
+                        id = result.user!!.uid,
+                        name = "",
+                        profilePictureUrl = "",
+                    )
+
+                    repo.createUserProfile(user)
+
                     _effect.emit(RegisterContract.Effect.ShowToast(registerSuccess))
                     _effect.emit(RegisterContract.Effect.NavigateToVerification)
                 }

@@ -66,6 +66,7 @@ dependencies {
     implementation(libs.androidx.room.ktx)
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
 
     implementation(libs.play.services.basement)
     implementation(platform(libs.firebase.bom))
@@ -73,6 +74,10 @@ dependencies {
     implementation(libs.firebase.auth)
 
     implementation(libs.gson)
+
+    implementation(libs.s3)
+    implementation(libs.sts)
+    implementation(libs.cognitoidentity)
 
     implementation(files("libs/zpdk-release-v3.1.aar"))
 }

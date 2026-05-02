@@ -3,8 +3,9 @@ package com.t4lon.sportifield.data.features.authentication.mapper
 import com.t4lon.sportifield.data.features.authentication.local.UserLocal
 import com.t4lon.sportifield.data.features.authentication.model.UserModel
 import com.t4lon.sportifield.data.features.authentication.remote.UserRemote
+import javax.inject.Inject
 
-class UserMapper {
+class UserMapper @Inject constructor(){
     // Local -> Model
     fun localToModel(local: UserLocal): UserModel {
         return UserModel(
